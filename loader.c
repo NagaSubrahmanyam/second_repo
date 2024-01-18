@@ -1,9 +1,3 @@
-/*
- * Copyright (c) 2012-2021 Andes Technology Corporation
- * All rights reserved.
- *
- */
-
 #include "config.h"
 
 #ifdef CFG_BURN
@@ -13,7 +7,6 @@ extern unsigned long __loader_start, __loader_lmaend, __loader_lmastart;
 extern void _start(void);
 
 
-/* The entry function when boot, executing on ROM/FLASH. */
 void __attribute__((naked, no_execit, no_profile_instrument_function, section(".bootloader"))) boot_loader(void) {
 
 	register unsigned long *src_ptr, *dst_ptr;
