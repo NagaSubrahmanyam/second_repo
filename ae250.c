@@ -1,6 +1,3 @@
-#include "config.h"
-#include "platform.h"
-
 extern void reset_vector(void);
 
 /* This must be a leaf function, no child function */
