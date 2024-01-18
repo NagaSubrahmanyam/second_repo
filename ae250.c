@@ -1,9 +1,3 @@
-/*
- * Copyright (c) 2012-2021 Andes Technology Corporation
- * All rights reserved.
- *
- */
-
 #include "config.h"
 #include "platform.h"
 
@@ -20,8 +14,6 @@ void __platform_init(void)
 
 void c_startup(void)
 {
-#define MEMCPY(des, src, n)     __builtin_memcpy ((des), (src), (n))
-#define MEMSET(s, c, n)         __builtin_memset ((s), (c), (n))
 	/* Data section initialization */
 	extern char  _edata, _end;
 	unsigned int size;
