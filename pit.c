@@ -1,20 +1,7 @@
-/*
- * Copyright (c) 2012-2021 Andes Technology Corporation
- * All rights reserved.
- *
- */
-
 #include "platform.h"
 
 #define PIT_CHNCTRL_CLK_EXTERNAL        (0 << 3)
 #define PIT_CHNCTRL_CLK_PCLK            (1 << 3)
-#define PIT_CHNCTRL_MODEMASK            0x07
-#define PIT_CHNCTRL_TMR_32BIT           1
-#define PIT_CHNCTRL_TMR_16BIT           2
-#define PIT_CHNCTRL_TMR_8BIT            3
-#define PIT_CHNCTRL_PWM                 4
-#define PIT_CHNCTRL_MIXED_16BIT         6
-#define PIT_CHNCTRL_MIXED_8BIT          7
 
 void pit_init(void)
 {

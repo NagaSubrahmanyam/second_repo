@@ -1,9 +1,3 @@
-/*
- * Copyright (c) 2012-2021 Andes Technology Corporation
- * All rights reserved.
- *
- */
-
 #ifndef __PLATFORM_H__
 #define __PLATFORM_H__
 
@@ -12,18 +6,9 @@ extern "C" {
 #endif
 
 #include "config.h"
-
-#include "core_v5.h"
-#include "ae250.h"
-#include "interrupt.h"
-
 #include "uart.h"
 #include "gpio.h"
 #include "pit.h"
-
-/*****************************************************************************
- * Peripheral device HAL declaration
- ****************************************************************************/
 #define DEV_PLMT             AE250_PLMT
 #define DEV_DMA              AE250_DMA
 #define DEV_SMU              AE250_SMU
